@@ -18,7 +18,7 @@ public class Example2Controller {
     public Response testResponseStatusExceptionResolver(@RequestParam(required = false, defaultValue = "false") boolean exception)
             throws ServiceException {
         if (exception) {
-            throw new ServiceException("ServiceException in testCustomAdvice");
+            throw new ServiceException("ServiceException in testResponseStatusExceptionResolver");
         }
         return new Response("OK");
     }

@@ -15,7 +15,7 @@ public class Example4Controller {
     public Response testDefaultControllerAdvice(@RequestParam(required = false, defaultValue = "false") boolean exception)
             throws BusinessException {
         if (exception) {
-            throw new BusinessException("BusinessException in testDefaultAdvice");
+            throw new BusinessException("BusinessException in testDefaultControllerAdvice");
         }
         return new Response("OK");
     }
