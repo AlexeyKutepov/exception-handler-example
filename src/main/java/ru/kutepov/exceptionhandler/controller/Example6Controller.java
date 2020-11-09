@@ -5,13 +5,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
-import ru.kutepov.exceptionhandler.annotation.CustomExceptionHandler;
 import ru.kutepov.exceptionhandler.dto.Response;
 
 import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 
 @RestController
-@CustomExceptionHandler
 public class Example6Controller {
 
     @GetMapping(value = "/testResponseStatusException", produces = APPLICATION_JSON_VALUE)
